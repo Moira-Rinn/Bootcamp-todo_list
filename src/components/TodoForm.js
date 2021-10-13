@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import SMCR from '../imgs/SMCR.png';
 
 const TodoForm = (props) => {
-
   const [cnt, setCnt] = useState(1);
   const [thingTodo, setThingTodo] = useState({ id: cnt, ttd: "", complete: false });
 
@@ -13,7 +12,9 @@ const TodoForm = (props) => {
   const justAnotherThing = (e) => {
     e.preventDefault();
     setCnt(cnt + 1)
-    props.onNewTodo(thingTodo);
+    //experimenting with persisting to localStorage... 
+    localStorage.setItem(thingTodo.id, JSON.stringify(thingTodo));
+    props.onNewTodo(JSON.parse(localStorage.getItem(thingTodo.id)));
     setThingTodo({ ...thingTodo, ttd: "" });
   };
 

@@ -8,12 +8,10 @@
 
 body {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   background-color: #e4a6e4;
   height: 100vh;
   margin-top: 10vh;
-  /* overflow: hidden; */
 }
 
 .App {
@@ -26,7 +24,6 @@ body {
   min-width: 75%;
   color: #2c0136;
   background-color: #e4a6e4;
-  /* margin: 20px; */
 }
 
 .Container {
@@ -57,8 +54,6 @@ body {
   display: flex;
   align-items:center;
   justify-content:space-evenly;
-  /* border: 1px solid #2c0136;
-  border-radius: 10px; */
   margin-bottom: 5px;
 }
 
@@ -72,8 +67,6 @@ form {
   border: 1px solid #2c0136;
   border-radius: 10px;
   width: 100%;
-  /* padding: 20px;
-  margin: 5px; */
 }
 
 .form-group {
@@ -89,7 +82,7 @@ label {
   padding: 10px;
 }
 
-.userData {
+.display {
   display: flex;
   align-items: center;
   justify-content: center;
